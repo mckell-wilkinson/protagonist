@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="content">
+    <Nav></Nav>
     <!-- THIS IS THE LAST BLOG POSTED -->
     <nuxt-link :to="`blog/${blogPosts[0].slug}`">
       <img :alt="blogPosts[0].title" :src="blogPosts[0].image" />
@@ -27,7 +28,8 @@
 </template>
 
 <script>
-import Logo from "~/components/Logo.vue";
+
+import Nav from "~/components/nav.vue";
 
 export default {
   head() {
@@ -44,7 +46,7 @@ export default {
     }
   },
   components: {
-    Logo
+    Nav
   }
 };
 </script>
