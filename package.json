@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "@nuxtjs/markdownit": "^1.2.9",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "vue-infinite-loading": "^2.4.5"
   },
   "devDependencies": {}
 }

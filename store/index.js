@@ -16,6 +16,9 @@ export const state = () => ({
         res.slug = key.slice(2, -5);
         return res;
       });
+      blogPosts.sort(function(a, b) {
+        return new Date(b.date) - new Date(a.date);
+      });
       await commit('setBlogPosts', blogPosts);
     },
   };
