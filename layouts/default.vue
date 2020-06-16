@@ -16,22 +16,21 @@ html {
   color: #222;
 }
 
-
-
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+a {
   font-family: "Playfair Display", serif;
-      margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 p {
-      margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 .bold {
   font-weight: 700;
@@ -54,4 +53,20 @@ img {
   color: #666;
 }
 
+.button {
+  color: #222;
+  text-decoration: none;
+  width: 100%;
+  border: solid 3px #222;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 0;
+
+}
+
+.button:hover {
+color: #fff;
+background: #222;
+}
 </style>
