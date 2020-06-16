@@ -71,7 +71,7 @@ export default {
 
   methods: {
 
-    //this will add the next ten blogs on scrll to bottom of page
+    //this will add the next ten blogs on scorll to bottom of page
 
     moreBlogs(n, state) {
       const blogPostsNew = this.$store.state.blogPosts;

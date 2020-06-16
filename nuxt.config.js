@@ -12,7 +12,12 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: '~/fonts/PlayfairDisplay-Black.ttf' },
+      { rel: 'stylesheet', href: '~/fonts/PlayfairDisplay-Regular.ttf' },
+      { rel: 'stylesheet', href: '~/fonts/Lato-Bold.ttf' },
+      { rel: 'stylesheet', href: '~/fonts/Lato-Regular.ttf' },
+
     ]
   },
   /*
@@ -23,6 +28,8 @@ export default {
   ** Global CSS
   */
   css: [
+
+    
   ],
   /*
   ** Plugins to load before mounting the App
