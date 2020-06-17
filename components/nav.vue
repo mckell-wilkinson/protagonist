@@ -1,17 +1,17 @@
 <template>
   <nav>
-    <div class="nav-container">
-      <div class="logo-container">
+    <ul class="nav-container">
+      <li class="logo-container">
         <img
           class="logo"
           src="/img/assets/logo.png"
           alt="The Protagonist logo"
         />
-      </div>
-      <div class="mobile-menu">
+      </li>
+      <li class="mobile-menu">
         <img class="mobile-icon" src="/img/assets/menu.svg" alt="Menu icon" />
-      </div>
-      <div class="menu-container hide">
+      </li>
+      <li class="menu-container hide">
         <ul>
           <li>
             <img src="/img/assets/facebook.svg" alt="" />
@@ -29,12 +29,21 @@
             Contact
           </li>
         </ul>
-      </div>
-    </div>
+      </li>
+    </ul>
   </nav>
 </template>
 
 <style scoped>
+
+ul {
+  list-style-type: none;
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
 .hide {
   display: none;
 }
@@ -46,9 +55,10 @@
 .mobile-icon {
 
   position: fixed;
-  right: 12px;
-  top: 10px;
+  right: 14px;
+  top: 20px;
   width: 30px;
+  z-index: 2;
 }
 
 nav {

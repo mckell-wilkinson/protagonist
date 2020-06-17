@@ -11,7 +11,7 @@
 <style scoped>
 
 .about-container {
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 }
 h1 {
   font-size: 1em;

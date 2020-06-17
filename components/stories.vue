@@ -14,11 +14,13 @@ h1 {
   font-size: 1em;
   margin: 0;
   padding: 0;
+  text-align: left;
 }
 
 h5 {
   font-size: 2.5em;
   margin: 0;
   padding: 0;
+  text-align: left;
 }
 </style>

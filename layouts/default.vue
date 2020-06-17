@@ -19,9 +19,8 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 10px 0 0;
 }
-
 
 h1,
 h2,
@@ -29,7 +28,7 @@ h3,
 h4,
 h5,
 h6,
-a {
+a, .submit {
   font-family: "Playfair Display", serif;
   margin: 0;
   padding: 0;
@@ -54,7 +53,6 @@ p {
   padding: 0;
 }
 
-
 img {
   width: 100%;
   margin: 0 auto;
@@ -65,26 +63,44 @@ img {
   color: #666;
 }
 
-.button {
+.button, .submit {
   color: #222;
   text-decoration: none;
-  /* border: solid 3px #222; */
   text-align: center;
   padding: 1em 3em;
-    -webkit-box-shadow:inset 0px 0px 0px 3px #222;
-    -moz-box-shadow:inset 0px 0px 0px 3px #222;
-    box-shadow:inset 0px 0px 0px 3px #222;
+  -webkit-box-shadow: inset 0px 0px 0px 3px #222;
+  -moz-box-shadow: inset 0px 0px 0px 3px #222;
+  box-shadow: inset 0px 0px 0px 3px #222;
 }
 
-.button.wide {
+.button.wide, .button.submit {
   display: block;
   margin: 0 auto;
   width: 100%;
   padding: 1em 0;
 }
 
-.button:hover {
-color: #fff;
-background: #222;
+.button:hover, .button.submit:hover {
+  color: #fff;
+  background: #222;
+}
+
+.submit {
+  background: none;
+  border: none;
+
+}
+
+.input-text {
+  background: #eee;
+  border: none;
+  border-bottom: solid 5px #222; 
+  width: 100%;
+  display: block;
+  height: 40px;
+  border-radius: 0;
+  font-size: 1.2em;
+  margin: 1em 0 2em;
+  padding: 0;
 }
 </style>
