@@ -3,6 +3,7 @@
     <Nav></Nav>
     <Stories></Stories>
     <!-- THIS IS THE LAST BLOG POSTED -->
+    <div class="news">
     <div class="main-news">
       <nuxt-link :to="`blog/${blogPosts[0].slug}`">
         <img
@@ -37,13 +38,21 @@
         </nuxt-link>
       </li>
     </ul>
-    <a class="button black" href="/blog">More stories</a>
+    <a class="button wide black" href="/blog">More stories</a>
+    </div>
+    <About></About>
+    <Newsletter></Newsletter>
+    <Contact></Contact>
+
   </div>
 </template>
 
 <script>
 import Nav from "~/components/nav.vue";
 import Stories from "~/components/stories.vue";
+import About from "~/components/about.vue";
+import Newsletter from "~/components/newsletter.vue";
+import Contact from "~/components/contact.vue";
 
 export default {
   head() {
@@ -61,12 +70,19 @@ export default {
   },
   components: {
     Nav,
-    Stories
+    Stories,
+    About,
+    Newsletter,
+    Contact
   }
 };
 </script>
 
 <style scoped>
+
+.news {
+  margin-bottom: 4em;
+}
 .main-news {
   position: relative;
   text-align: center;
@@ -112,7 +128,7 @@ export default {
 }
 
 .stories-list > li > a > img {
-  width: 70%;
+  width: 60%;
 }
 
 .stories-list > li {
@@ -123,22 +139,23 @@ export default {
 .second-text-container {
   background: #fff;
   position: absolute;
-  top: 50%;
+  bottom: 0;
   left: 72%;
-  padding: 2em;
-  transform: translate(-50%, -50%);
+  padding: 1em 0 1em 1em;
+  transform: translateX(-50%);
   color: #222;
-  width: 40%;
+  width: 50%;
 }
 
 .second-text-container > h3 {
-  font-size: 1.2em;
-    word-break: break-word;
+  font-size: 1.1em;
+  word-break: break-word;
 }
 
 .second-text-container > p {
   text-transform: uppercase;
   font-size: 0.7em;
+  opacity: 0.8;
 }
 
 .second-hr {
@@ -149,6 +166,4 @@ export default {
   background: #fcee21;
   border: none;
 }
-
-
 </style>

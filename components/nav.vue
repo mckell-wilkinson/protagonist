@@ -46,7 +46,7 @@
 .mobile-icon {
 
   position: fixed;
-  right: 22px;
+  right: 12px;
   top: 10px;
   width: 30px;
 }

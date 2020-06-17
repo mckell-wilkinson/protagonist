@@ -12,14 +12,12 @@
 }
 h1 {
   font-size: 1em;
-  text-align: right;
   margin: 0;
   padding: 0;
 }
 
 h5 {
   font-size: 2.5em;
-  text-align: right;
   margin: 0;
   padding: 0;
 }

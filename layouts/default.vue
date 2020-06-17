@@ -14,7 +14,14 @@ html {
   margin: 0;
   background: #fff;
   color: #222;
+  line-height: 1.4;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 
 h1,
 h2,
@@ -31,6 +38,7 @@ a {
 p {
   margin: 0;
   padding: 0;
+  font-family: "Lato", sans-serif;
 }
 .bold {
   font-weight: 700;
@@ -43,10 +51,14 @@ p {
 .content {
   width: 90%;
   margin: 0 auto;
+  padding: 0;
 }
+
 
 img {
   width: 100%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .light-grey {
@@ -56,13 +68,19 @@ img {
 .button {
   color: #222;
   text-decoration: none;
-  width: 100%;
-  border: solid 3px #222;
+  /* border: solid 3px #222; */
+  text-align: center;
+  padding: 1em 3em;
+    -webkit-box-shadow:inset 0px 0px 0px 3px #222;
+    -moz-box-shadow:inset 0px 0px 0px 3px #222;
+    box-shadow:inset 0px 0px 0px 3px #222;
+}
+
+.button.wide {
   display: block;
   margin: 0 auto;
-  text-align: center;
-  padding: 10px 0;
-
+  width: 100%;
+  padding: 1em 0;
 }
 
 .button:hover {
