@@ -11,7 +11,7 @@
 <style scoped>
 
 .about-container {
-    margin-bottom: 4em;
+    margin-bottom: 6em;
 }
 h1 {
   font-size: 1em;
@@ -24,6 +24,7 @@ h5 {
   margin: 0;
   padding: 0;
 }
+
 
 p {
   margin: 1em 0;

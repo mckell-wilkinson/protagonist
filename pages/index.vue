@@ -81,7 +81,7 @@ export default {
 <style scoped>
 
 .news {
-  margin-bottom: 4em;
+  margin-bottom: 6em;
 }
 .main-news {
   position: relative;
@@ -123,7 +123,6 @@ export default {
 
 .stories-list {
   list-style-type: none;
-  margin: 2em 0 0;
   padding: 0;
 }
 
@@ -133,7 +132,7 @@ export default {
 
 .stories-list > li {
   position: relative;
-  margin: 2em 0;
+  margin: 1em 0 0;
 }
 
 .second-text-container {

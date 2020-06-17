@@ -31,7 +31,7 @@
 <style scoped>
 
 .newsletter-container {
-    margin-bottom: 4em;
+    margin-bottom: 6em;
 }
 h1 {
   font-size: 1em;

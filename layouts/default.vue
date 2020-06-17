@@ -28,7 +28,8 @@ h3,
 h4,
 h5,
 h6,
-a, .submit {
+a,
+.submit {
   font-family: "Playfair Display", serif;
   margin: 0;
   padding: 0;
@@ -63,7 +64,8 @@ img {
   color: #666;
 }
 
-.button, .submit {
+.button,
+.submit {
   color: #222;
   text-decoration: none;
   text-align: center;
@@ -71,16 +73,19 @@ img {
   -webkit-box-shadow: inset 0px 0px 0px 3px #222;
   -moz-box-shadow: inset 0px 0px 0px 3px #222;
   box-shadow: inset 0px 0px 0px 3px #222;
+  font-size: 1em;
+  margin: 1em auto 0;
 }
 
-.button.wide, .button.submit {
+.button.wide,
+.submit.wide {
   display: block;
-  margin: 0 auto;
   width: 100%;
   padding: 1em 0;
 }
 
-.button:hover, .button.submit:hover {
+.button:hover,
+.button.submit:hover {
   color: #fff;
   background: #222;
 }
@@ -88,19 +93,21 @@ img {
 .submit {
   background: none;
   border: none;
-
 }
 
 .input-text {
   background: #eee;
   border: none;
-  border-bottom: solid 5px #222; 
+  border-bottom: solid 5px #222;
   width: 100%;
+  max-width: 100%;
   display: block;
   height: 40px;
   border-radius: 0;
   font-size: 1.2em;
-  margin: 1em 0 2em;
+  margin: 1em 0;
   padding: 0;
+  padding-left: 10px;
+  box-sizing: border-box;
 }
 </style>
