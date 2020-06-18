@@ -4,13 +4,9 @@
     <Stories></Stories>
     <!-- THIS IS THE LAST BLOG POSTED -->
     <div class="news">
-    <div class="main-news">
+      <div class="main-news-container">
+    <div class="main-news" :style="{ background: `url('${blogPosts[0].image}')`}">
       <nuxt-link :to="`blog/${blogPosts[0].slug}`">
-        <img
-          class="main-news-img"
-          :alt="blogPosts[0].title"
-          :src="blogPosts[0].image"
-        />
         <div class="main-text-container">
           <p>{{ blogPosts[0].subject }}</p>
           <h3 class="black">{{ blogPosts[0].title }}</h3>
@@ -19,6 +15,7 @@
         </div>
       </nuxt-link>
     </div>
+      </div>
 
     <!-- THESE ARE THE NEXT 8 -->
     <ul class="stories-list">
@@ -38,7 +35,7 @@
         </nuxt-link>
       </li>
     </ul>
-    <a class="button wide black" href="/blog">More stories</a>
+    <!-- <a class="button wide black" href="/blog">More stories</a> -->
     </div>
     <About></About>
     <Newsletter></Newsletter>
@@ -83,14 +80,28 @@ export default {
 .news {
   margin-bottom: 6em;
 }
-.main-news {
-  position: relative;
-  text-align: center;
+
+.main-news-container {
+  height: 50vh;
 }
 
-.main-news-img {
-  filter: brightness(60%);
-  position: relative;
+
+.main-news {
+background-size: cover !important;
+height: 100% !important;
+background-position: center center !important;
+position: relative;
+
+}
+
+.main-news:before {
+    content: " ";
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 100%;
+background: rgba(0,0,0, .4);
+
 }
 
 .main-text-container {
@@ -102,6 +113,7 @@ export default {
   margin: 0;
   padding: 0;
   width: 100%;
+  text-align: center;
 }
 
 .main-text-container > p {
@@ -112,6 +124,7 @@ export default {
 
 .main-text-container > h3 {
   font-size: 2.4em;
+  padding: 0 0.5em;
 }
 
 .main-hr {
@@ -165,4 +178,58 @@ export default {
   background: #fcee21;
   border: none;
 }
+
+
+@media only screen and (min-width: 600px) {
+  .second-text-container {
+  background: #fff;
+  position: absolute;
+  bottom: unset;
+  top: 5%;
+  left: 72%;
+  padding: 1em 0 1em 1em;
+  transform: translateX(-50%);
+  color: #222;
+  width: 50%;
+}
+
+}
+
+
+@media only screen and (min-width: 1300px) {
+
+.news {
+  display: inline-flex;
+}
+
+.main-news {
+  width: 50%;
+  padding: 0 1em 0 0;
+  position: sticky;
+  height: 100vh;
+  top: 0;
+}
+
+.stories-list {
+  width: 50%;
+}
+
+.main-text-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+
+}
+
+
+
+
+
 </style>

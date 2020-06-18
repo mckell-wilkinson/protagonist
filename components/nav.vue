@@ -55,7 +55,7 @@ ul {
 .mobile-icon {
 
   position: fixed;
-  right: 14px;
+  right: 2.9em;
   top: 20px;
   width: 30px;
   z-index: 2;

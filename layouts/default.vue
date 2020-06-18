@@ -8,7 +8,6 @@
 html {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 16px;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -19,7 +18,8 @@ html {
 
 body {
   margin: 0;
-  padding: 10px 0 0;
+  padding: 0;
+  font-size: 16px;
 }
 
 h1,
@@ -49,7 +49,7 @@ p {
 }
 
 .content {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   padding: 0;
 }
@@ -70,9 +70,9 @@ img {
   text-decoration: none;
   text-align: center;
   padding: 1em 3em;
-  -webkit-box-shadow: inset 0px 0px 0px 3px #222;
-  -moz-box-shadow: inset 0px 0px 0px 3px #222;
-  box-shadow: inset 0px 0px 0px 3px #222;
+  -webkit-box-shadow: inset 0px 0px 0px 2px #222;
+  -moz-box-shadow: inset 0px 0px 0px 2px #222;
+  box-shadow: inset 0px 0px 0px 2px #222;
   font-size: 1em;
   margin: 1em auto 0;
 }
@@ -110,4 +110,60 @@ img {
   padding-left: 10px;
   box-sizing: border-box;
 }
+
+@media only screen and (min-width: 400px) {
+  body {
+    font-size: 20px;
+  }
+} 
+
+@media only screen and (min-width: 500px) {
+  body {
+    font-size: 22px;
+  }
+} 
+
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: 24px;
+  }
+} 
+
+
+@media only screen and (min-width: 600px) {
+  body {
+    font-size: 26px;
+  }
+} 
+
+@media only screen and (min-width: 800px) {
+  body {
+    font-size: 28px;
+  }
+} 
+
+
+@media only screen and (min-width: 900px) {
+  body {
+    font-size: 30px;
+  }
+} 
+
+@media only screen and (min-width: 1000px) {
+  body {
+    font-size: 32px;
+  }
+
+} 
+
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 22px;
+  }
+
+  .content {
+    width: 90%;
+  }
+
+} 
 </style>
