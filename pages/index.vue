@@ -18,13 +18,14 @@
       </div>
 
     <!-- THESE ARE THE NEXT 8 -->
-    <ul class="stories-list">
-      <li
+    <magic-grid class="stories-list">
+      <li class="item"
         v-for="(blog, index) in blogPosts"
         :key="blog.title"
         v-if="index && index < 9"
       >
         <nuxt-link :to="`blog/${blog.slug}`">
+        <div class="content">
           <img :alt="blog.title" :src="blog.image" />
           <div class="second-text-container">
             <p>{{ blog.subject }}</p>
@@ -32,9 +33,10 @@
             <hr class="second-hr" />
             <p>{{ new Date(blog.date).toDateString() }}</p>
           </div>
+        </div>
         </nuxt-link>
       </li>
-    </ul>
+    </magic-grid>
     <!-- <a class="button wide black" href="/blog">More stories</a> -->
     </div>
     <About></About>
@@ -45,6 +47,7 @@
 </template>
 
 <script>
+// import MagicGrid from 'vue-magic-grid';
 import Nav from "~/components/nav.vue";
 import Stories from "~/components/stories.vue";
 import About from "~/components/about.vue";
@@ -65,6 +68,7 @@ export default {
       return this.$store.state.blogPosts;
     }
   },
+
   components: {
     Nav,
     Stories,
@@ -139,7 +143,7 @@ background: rgba(0,0,0, .4);
   padding: 0;
 }
 
-.stories-list > li > a > img {
+.stories-list > li > a > .content > img {
   width: 60%;
 }
 
@@ -148,16 +152,17 @@ background: rgba(0,0,0, .4);
   margin: 1em 0 0;
 }
 
-.second-text-container {
+  .second-text-container {
   background: #fff;
   position: absolute;
-  bottom: 0;
+  top: 5%;
   left: 72%;
   padding: 1em 0 1em 1em;
   transform: translateX(-50%);
   color: #222;
   width: 50%;
 }
+
 
 .second-text-container > h3 {
   font-size: 1.1em;
@@ -180,29 +185,49 @@ background: rgba(0,0,0, .4);
 }
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
+
+
   .second-text-container {
-  background: #fff;
-  position: absolute;
-  bottom: unset;
-  top: 5%;
-  left: 72%;
+  background: grey;
+  position: relative;
+  bottom: 50px;
+  top: unset;
+  left: unset;
   padding: 1em 0 1em 1em;
-  transform: translateX(-50%);
+  transform: translateX(0);
   color: #222;
-  width: 50%;
+  width: 80%;
+}
+
+ul {
+
+  padding: 0;
+  margin: 0;
+  /* grid-template-columns: 50% 50%; */
+}
+
+li {
+  width: 45%;
+  /* margin-bottom: 1em;  */
+  padding: 0;
+  /* height: 100%; */
+}
+
+.stories-list > li > a > .content > img {
+  width: 100%;
 }
 
 }
 
-
+/* 
 @media only screen and (min-width: 1300px) {
 
 .news {
-  display: inline-flex;
+  display: flex;
 }
 
-.main-news {
+.main-news-container {
   width: 50%;
   padding: 0 1em 0 0;
   position: sticky;
@@ -227,7 +252,7 @@ background: rgba(0,0,0, .4);
 
 
 }
-
+ */
 
 
 

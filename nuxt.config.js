@@ -35,7 +35,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~/plugins/infiniteloading', ssr: false }
+    { src: '~/plugins/infiniteloading', ssr: false },
+    {src: '~/plugins/magicgrid.js'}
   ],
   /*
   ** Nuxt.js dev-modules
@@ -53,6 +54,7 @@ export default {
   ** Build configuration
   */
   build: {
+    transpile: ['vue-magic-grid'],
     /*
     ** You can extend webpack config here
     */
