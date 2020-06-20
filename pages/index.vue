@@ -18,14 +18,15 @@
       </div>
 
     <!-- THESE ARE THE NEXT 8 -->
-    <magic-grid class="stories-list">
-      <li class="item"
+    <div v-masonry transition-duration="0.1s" item-selector=".item" gutter="40"  class="masonry-container">
+      <div v-masonry-tile class="item" 
         v-for="(blog, index) in blogPosts"
         :key="blog.title"
         v-if="index && index < 9"
+       
       >
         <nuxt-link :to="`blog/${blog.slug}`">
-        <div class="content">
+        <div class="story-content">
           <img :alt="blog.title" :src="blog.image" />
           <div class="second-text-container">
             <p>{{ blog.subject }}</p>
@@ -35,8 +36,8 @@
           </div>
         </div>
         </nuxt-link>
-      </li>
-    </magic-grid>
+      </div>
+    </div>
     <!-- <a class="button wide black" href="/blog">More stories</a> -->
     </div>
     <About></About>
@@ -53,6 +54,9 @@ import Stories from "~/components/stories.vue";
 import About from "~/components/about.vue";
 import Newsletter from "~/components/newsletter.vue";
 import Contact from "~/components/contact.vue";
+import MagicGrid from '~/plugins/magicgrid.js';
+import NoSSR from 'vue-no-ssr'
+
 
 export default {
   head() {
@@ -68,18 +72,38 @@ export default {
       return this.$store.state.blogPosts;
     }
   },
+     mounted () {
+      if (typeof this.$redrawVueMasonry === 'function') {
+        this.$redrawVueMasonry()
+      }
+    },
+
+//   mounted: function() {
+// let magicGrid = new MagicGrid({
+//   container: '.container',
+//   animate: true,
+//   gutter: 30,
+//   static: true,
+//   useMin: true
+// });
+
+// magicGrid.listen();
+//   },
 
   components: {
     Nav,
     Stories,
     About,
     Newsletter,
-    Contact
+    Contact,
+    'no-ssr': NoSSR
   }
 };
 </script>
 
 <style scoped>
+
+
 
 .news {
   margin-bottom: 6em;
@@ -138,31 +162,33 @@ background: rgba(0,0,0, .4);
   border: none;
 }
 
-.stories-list {
+.masonry-container {
   list-style-type: none;
   padding: 0;
 }
 
-.stories-list > li > a > .content > img {
+.masonry-container > .item > a > .content > img {
   width: 60%;
 }
 
-.stories-list > li {
+.masonry-container > .item {
   position: relative;
   margin: 1em 0 0;
+  padding: 0;
+  width: 60%;
+
 }
 
   .second-text-container {
   background: #fff;
   position: absolute;
   top: 5%;
-  left: 72%;
+  right: 0;
   padding: 1em 0 1em 1em;
-  transform: translateX(-50%);
+  transform: translateX(80%);
   color: #222;
-  width: 50%;
+  width: 80%;
 }
-
 
 .second-text-container > h3 {
   font-size: 1.1em;
@@ -189,7 +215,6 @@ background: rgba(0,0,0, .4);
 
 
   .second-text-container {
-  background: grey;
   position: relative;
   bottom: 50px;
   top: unset;
@@ -198,23 +223,38 @@ background: rgba(0,0,0, .4);
   transform: translateX(0);
   color: #222;
   width: 80%;
+  text-decoration: none;
 }
 
-ul {
+
+.second-text-container > h3 {
+  font-size: 1.4em;
+  word-break: break-word;
+}
+
+
+.masonry-container {
 
   padding: 0;
   margin: 0;
-  /* grid-template-columns: 50% 50%; */
+  width: 100%;
 }
 
-li {
-  width: 45%;
+.masonry-container > .item {
+  width: 47.5%;
   /* margin-bottom: 1em;  */
   padding: 0;
   /* height: 100%; */
+
 }
 
-.stories-list > li > a > .content > img {
+
+.story-content {
+  padding: 0;
+margin: 0;
+width: 100%;
+}
+.story-content > img {
   width: 100%;
 }
 

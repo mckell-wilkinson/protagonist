@@ -36,7 +36,8 @@ export default {
   */
   plugins: [
     { src: '~/plugins/infiniteloading', ssr: false },
-    {src: '~/plugins/magicgrid.js'}
+    {src: '~/plugins/magicgrid.js'},
+    { src: '~/plugins/vue-masonry', ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules

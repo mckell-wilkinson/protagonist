@@ -33,6 +33,7 @@ a,
   font-family: "Playfair Display", serif;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 p {
