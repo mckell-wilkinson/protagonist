@@ -116,46 +116,43 @@ img {
   body {
     font-size: 20px;
   }
-} 
+}
 
 @media only screen and (min-width: 500px) {
   body {
     font-size: 22px;
   }
-} 
+}
 
 @media only screen and (min-width: 600px) {
   body {
     font-size: 24px;
   }
-} 
-
+}
 
 @media only screen and (min-width: 600px) {
   body {
     font-size: 26px;
   }
-} 
+}
 
 @media only screen and (min-width: 800px) {
   body {
     font-size: 28px;
   }
-} 
-
+}
 
 @media only screen and (min-width: 900px) {
   body {
     font-size: 30px;
   }
-} 
+}
 
 @media only screen and (min-width: 1000px) {
   body {
     font-size: 32px;
   }
-
-} 
+}
 
 @media only screen and (min-width: 1024px) {
   body {
@@ -165,6 +162,5 @@ img {
   .content {
     width: 90%;
   }
-
-} 
+}
 </style>

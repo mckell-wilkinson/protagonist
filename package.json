@@ -15,7 +15,6 @@
     "masonry-layout": "^4.2.2",
     "nuxt": "^2.0.0",
     "vue-infinite-loading": "^2.4.5",
-    "vue-magic-grid": "0.0.4",
     "vue-masonry": "^0.11.8"
   },
   "devDependencies": {}
