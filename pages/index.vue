@@ -5,19 +5,19 @@
     <!-- THIS IS THE LAST BLOG POSTED -->
     <div class="news">
       <div class="main-news-container">
-        <div
-          class="main-news"
-          :style="{ background: `url('${blogPosts[0].image}')` }"
-        >
-          <nuxt-link :to="`blog/${blogPosts[0].slug}`">
+        <nuxt-link :to="`blog/${blogPosts[0].slug}`">
+          <div
+            class="main-news"
+            :style="{ background: `url('${blogPosts[0].image}')` }"
+          >
             <div class="main-text-container">
               <p>{{ blogPosts[0].subject }}</p>
               <h3 class="black">{{ blogPosts[0].title }}</h3>
               <hr class="main-hr" />
               <p>{{ new Date(blogPosts[0].date).toDateString() }}</p>
             </div>
-          </nuxt-link>
-        </div>
+          </div>
+        </nuxt-link>
       </div>
 
       <!-- THESE ARE THE NEXT 8 -->
@@ -118,6 +118,16 @@ export default {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
+}
+
+.main-news:hover {
+  transform: scale(1.025);
+  transition: 0.2s;
+}
+
+.story-content:hover {
+  transform: scale(1.025);
+  transition: 0.2s;
 }
 
 .main-text-container {
