@@ -64,7 +64,7 @@ img {
 .light-grey {
   color: #666;
 }
-
+/* 
 .button,
 .submit {
   color: #222;
@@ -94,6 +94,118 @@ img {
 .submit {
   background: none;
   border: none;
+} */
+
+.button-container {
+  display: block;
+  position: absolute;
+}
+
+.button {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    margin-top: 0px;
+}
+
+.button .bottom {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    width: 100%;
+    height: 100%;
+    background-color: #FCEE21;
+    display: block;
+    -webkit-transition: all .15s ease-out;
+    -moz-transition: all .15s ease-out;
+    -o-transition: all .15s ease-out;
+    transition: all .15s ease-out;
+}
+
+.button .top {
+    position: relative;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 24px 34px 22px 34px;
+    border: 2px solid #222;
+}
+
+.button-dark .top {
+    border: 2px solid #fff;
+}
+
+.button .top .label {
+  font-weight: 900;
+    color: #222;
+    font-size: 12px;
+    line-height: 110%;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: all .15s ease-out;
+    -moz-transition: all .15s ease-out;
+    -o-transition: all .15s ease-out;
+    transition: all .15s ease-out;
+}
+
+.button-dark .top .label {
+    color: #fff;
+}
+
+.button:hover .bottom {
+    left: 0;
+    top: 0;
+    background-color: #fff;
+}
+
+
+
+.button-border {
+    position: absolute;
+    background-color: #222;
+    -webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+}
+
+.button:hover .top .button-border-left,.button:hover .top .button-border-right {
+    height: calc(100% + 2px);
+}
+
+.button:hover .top .button-border-top,.button:hover .top .button-border-bottom {
+    width: calc(100% + 2px);
+}
+
+.button-border-left {
+    left: -2px;
+    bottom: -2px;
+    width: 2px;
+    height: 0;
+}
+
+.button-border-top {
+    left: -2px;
+    top: -2px;
+    width: 0;
+    height: 2px;
+}
+
+.button-border-right {
+    right: -2px;
+    top: -2px;
+    width: 2px;
+    height: 0;
+}
+
+.button-border-bottom {
+    right: -2px;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
 }
 
 .input-text {

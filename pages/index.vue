@@ -28,6 +28,7 @@
         gutter="40"
         class="masonry-container"
       >
+
         <div
           v-masonry-tile
           class="item"
@@ -47,9 +48,30 @@
             </div>
           </nuxt-link>
         </div>
+              <div class="button-container">
+           <a href="#" class="button nav-link">
+
+          <div class="bottom"></div>
+
+          <div class="top">
+
+          <div class="label">Read more</div>
+            
+        		<div class="button-border button-border-left"></div>
+        	  <div class="button-border button-border-top"></div>
+        	  <div class="button-border button-border-right"></div>
+        		<div class="button-border button-border-bottom"></div>
+
+          </div>
+
+        	</a>
+      </div>
       </div>
       <!-- <a class="button wide black" href="/blog">More stories</a> -->
+
+      
     </div>
+
     <About></About>
     <Newsletter></Newsletter>
     <Contact></Contact>
@@ -253,7 +275,7 @@ export default {
 
   .main-news-container {
     width: 50%;
-    padding: 0 1em 0 0;
+    padding: 0 2.2em 0 0;
     position: sticky;
     height: 100vh;
     top: 0;
