@@ -1,17 +1,21 @@
 <template>
   <div class="about-container">
-    <h5 class="black">ABOUT</h5>
-    <h1 class="light-grey">Celebrating the diversity of women one story at a time</h1>
+    <h5 class="black">ABOUT PROTAGNIST</h5>
+    <h1 class="light-grey">
+      The Protaganist exists to give women a voice in a world dominated by men
+    </h1>
     <img class="logo-big" src="/img/assets/logo-big.jpg" />
-    <p>The Protaganist exists to give women a voice in a world dominated by men. Lorem ipsum dolor, sit amet consectetur olor adipisicing elit tera. Voluptatum es, officiis!</p>
-    <a class="button wide black" href="/blog">About us</a>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis enim
+      distinctio in ipsam eveniet aspernatur, odio quia eius possimus quisquam?
+    </p>
+
   </div>
 </template>
 
 <style scoped>
-
 .about-container {
-    margin-bottom: 6em;
+  margin-bottom: 6em;
 }
 h1 {
   font-size: 1em;
@@ -24,7 +28,6 @@ h5 {
   margin: 0;
   padding: 0;
 }
-
 
 p {
   margin: 1em 0;

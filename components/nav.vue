@@ -54,14 +54,14 @@ ul {
 
 .mobile-icon {
   position: fixed;
-  right: 0.6em;
+  right: 1em;
   top: 20px;
   width: 30px;
   z-index: 2;
 }
 
 nav {
-  margin-bottom: 3em;
+  margin: 1em 0 3em;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -70,7 +70,29 @@ nav {
   }
 
   .menu-container {
-    display: block;
+    display: flex;
   }
+
+ul.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.menu-container > ul, .menu-container > ul > li  {
+  display: flex;
+  align-items: center;
+} 
+
+.menu-container > ul > li {
+  margin-left: 5rem;
+  font-size: 0.7em;
+  color: #555;
+}
+
+
+
+
 }
 </style>

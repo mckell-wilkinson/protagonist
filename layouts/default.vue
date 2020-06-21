@@ -50,9 +50,8 @@ p {
 }
 
 .content {
-  width: 95%;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 1em;
 }
 
 img {
@@ -64,37 +63,7 @@ img {
 .light-grey {
   color: #666;
 }
-/* 
-.button,
-.submit {
-  color: #222;
-  text-decoration: none;
-  text-align: center;
-  padding: 1em 3em;
-  -webkit-box-shadow: inset 0px 0px 0px 2px #222;
-  -moz-box-shadow: inset 0px 0px 0px 2px #222;
-  box-shadow: inset 0px 0px 0px 2px #222;
-  font-size: 1em;
-  margin: 1em auto 0;
-}
 
-.button.wide,
-.submit.wide {
-  display: block;
-  width: 100%;
-  padding: 1em 0;
-}
-
-.button:hover,
-.button.submit:hover {
-  color: #fff;
-  background: #222;
-}
-
-.submit {
-  background: none;
-  border: none;
-} */
 
 .button-container {
   display: block;
