@@ -99,6 +99,7 @@ img {
 .button-container {
   display: block;
   position: absolute;
+  bottom: 0;
 }
 
 .button {

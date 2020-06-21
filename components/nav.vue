@@ -53,9 +53,8 @@ ul {
 }
 
 .mobile-icon {
-
   position: fixed;
-  right: 2.9em;
+  right: 0.6em;
   top: 20px;
   width: 30px;
   z-index: 2;
@@ -63,5 +62,15 @@ ul {
 
 nav {
   margin-bottom: 3em;
+}
+
+@media only screen and (min-width: 1024px) {
+  .mobile-icon {
+    display: none;
+  }
+
+  .menu-container {
+    display: block;
+  }
 }
 </style>

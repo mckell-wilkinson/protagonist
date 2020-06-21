@@ -123,7 +123,7 @@ export default {
 }
 
 .main-news-container {
-  height: 50vh;
+  height: 42vh;
 }
 
 .main-news {
@@ -229,7 +229,18 @@ export default {
   border: none;
 }
 
+@media only screen and (min-width: 400px) {
+  .main-news-container {
+  height: 50vh;
+}
+
+}
 @media only screen and (min-width: 800px) {
+
+  .main-news-container {
+  height: 60vh;
+}
+
   .second-text-container {
     position: relative;
     bottom: 50px;
