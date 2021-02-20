@@ -1,6 +1,6 @@
 <template>
   <div class="stories-container">
-    <h5 class="black">PROTAGANIST</h5>
+    <h5 class="black">Protagonist</h5>
     <h1 class="light-grey"><span>Celebrating the diversity of women one story at a time</span></h1>
   </div>
 </template>
@@ -21,7 +21,7 @@ h1 {
 }
 
 h5 {
-  font-size: 2.5em;
+  font-size: 3.5em;
   margin: 0;
   padding: 0;
   text-align: left;

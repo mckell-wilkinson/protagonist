@@ -5,6 +5,8 @@
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
+
 html {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -30,7 +32,7 @@ h5,
 h6,
 a,
 .submit {
-  font-family: "Playfair Display", serif;
+  font-family: 'Fraunces', serif;
   margin: 0;
   padding: 0;
   text-decoration: none;

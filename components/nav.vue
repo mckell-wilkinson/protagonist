@@ -49,7 +49,7 @@ ul {
 }
 
 .logo {
-  width: 50px;
+  width: 100px;
 }
 
 .mobile-icon {
