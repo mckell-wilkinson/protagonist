@@ -5,7 +5,7 @@
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;900&display=swap');
 
 html {
   font-family: "Lato", sans-serif;
@@ -86,7 +86,7 @@ img {
     top: 7px;
     width: 100%;
     height: 100%;
-    background-color: #FCEE21;
+    background-color: #a9a985;
     display: block;
     -webkit-transition: all .15s ease-out;
     -moz-transition: all .15s ease-out;

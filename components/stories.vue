@@ -16,15 +16,17 @@ h1 {
   padding: 0;
   text-align: left;
   position: relative;
-  color: #555;
+  color: #666;
+  font-weight: 400;
 
 }
 
 h5 {
-  font-size: 3.5em;
+  font-size: 3em;
   margin: 0;
   padding: 0;
   text-align: left;
+  font-weight: 900;
 
 }
 
@@ -43,10 +45,9 @@ h1:after {
     left: 0;
     right: 0;
     height: 0.5em;
-    border-top: 1px solid #555;
+    border-top: 1px solid #A9A985;
     z-index: -1;
-}
-
+    }
 }
 
 

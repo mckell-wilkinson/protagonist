@@ -14,7 +14,7 @@
               <p>{{ blogPosts[0].subject }}</p>
               <h3 class="black">{{ blogPosts[0].title }}</h3>
               <hr class="main-hr" />
-              <p>{{ new Date(blogPosts[0].date).toDateString() }}</p>
+              <p>{{ new Date(blogPosts[0].date).toLocaleDateString() }}</p>
             </div>
           </div>
         </nuxt-link>
@@ -43,7 +43,7 @@
                 <p>{{ blog.subject }}</p>
                 <h3 class="black">{{ blog.title }}</h3>
                 <hr class="second-hr" />
-                <p>{{ new Date(blog.date).toDateString() }}</p>
+                <p>{{ new Date(blog.date).toLocaleDateString() }}</p>
               </div>
             </div>
           </nuxt-link>
@@ -166,19 +166,20 @@ export default {
 
 .main-text-container > p {
   text-transform: uppercase;
-  font-size: 0.9em;
+  font-size: 0.7em;
   opacity: 0.9;
 }
 
 .main-text-container > h3 {
-  font-size: 2.4em;
-  padding: 0 0.5em;
+  font-size: 2em;
+  padding: 0 2em;
+  font-weight: 400;
 }
 
 .main-hr {
-  width: 20px;
-  height: 5px;
-  background: #fcee21;
+  width: 32px;
+  height: 8px;
+  background: #a9a985;
   border: none;
 }
 
@@ -203,29 +204,30 @@ export default {
   position: absolute;
   top: 5%;
   right: 0;
-  padding: 1em 0 1em 1em;
+  padding: 1em;
   transform: translateX(80%);
   color: #222;
   width: 80%;
 }
 
 .second-text-container > h3 {
-  font-size: 1.1em;
+  font-size: 1em;
   word-break: break-word;
+  font-weight: 400;
 }
 
 .second-text-container > p {
   text-transform: uppercase;
   font-size: 0.7em;
-  opacity: 0.8;
+  color: #73734d;
 }
 
 .second-hr {
-  width: 20px;
-  height: 5px;
+  width: 24px;
+  height: 6px;
   display: block;
   margin: 0.5em 0;
-  background: #fcee21;
+  background: #a9a985;
   border: none;
 }
 
@@ -254,7 +256,7 @@ export default {
   }
 
   .second-text-container > h3 {
-    font-size: 1.4em;
+    font-size: 1em;
     word-break: break-word;
   }
 
